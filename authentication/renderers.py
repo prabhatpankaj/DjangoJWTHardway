@@ -3,6 +3,8 @@ from core.renderers import CoreJSONRenderer
 
 class UserJSONRenderer(CoreJSONRenderer):
     object_label = 'user'
+    pagination_object_label = 'users'
+    pagination_count_label = 'usersCount'
 
     def render(self, data, media_type=None, renderer_context=None):
         # If we recieve a `token` key as part of the response, it will by a
