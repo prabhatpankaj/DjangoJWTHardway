@@ -1,0 +1,11 @@
+# Executable and temporary files
+*.pyc
+*.idea/
+*.DS_*
+**.pyc
+**.idea/
+**.DS_*
+
+
+venv
+venv/*
