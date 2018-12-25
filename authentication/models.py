@@ -132,7 +132,6 @@ class User(AbstractBaseUser, PermissionsMixin, TimestampedModel):
         date set to 60 days into the future.
         """
         dt = datetime.now() + timedelta(days=60)
-
         token = jwt.encode({
             'id': self.pk,
             'exp': int(dt.strftime('%s'))
